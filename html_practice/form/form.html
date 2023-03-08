@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+        }
+        .banner{
+            height: 40px;
+            width: 100%;
+            background-color:  rgb(156, 19, 19);;
+        }
+         .personal_info{
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            align-items: start;
+            justify-content: start;
+         }
+         .personal_info_container{
+            display: flex;
+            width: 100%;
+            align-items: start;
+            justify-content: start;
+         }
+         .labels{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin-right:100px;
+            justify-content: start;
+         }
+         .labels h3{
+            margin:0 0 21px 0 ;
+         }
+         .inputs{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+         }
+         .inputs input,.inputs select{
+            height: 25px;
+            margin:0 0 20px 0;
+         }
+    </style>
+</head>
+<body>
+    <form style="display: flex;flex-direction: column; width: 600px;justify-content: start;align-items: center;" action="#">
+        <div class="banner"></div>
+        <h1 style="margin-bottom: 10px;">Job Application</h1>
+        <div class="personal_info">
+            <h2 style="color: rgb(156, 19, 19);">Personal Information</h2>
+            <div class="personal_info_container">
+                <div class="labels">
+                    <h3>Name</h3>
+                    <h3>Email</h3>
+                    <h3>Education</h3>
+                    <h3>Resume</h3>
+                    <h3>Address</h3>
+                </div>
+                <div class="inputs">
+                    <input name="name" type="text">
+                    <input name="email" type="email" placeholder="user@example.com">
+                    <select name="education" id="">
+                        <option value="">Matric</option>
+                        <option value="">Fsc</option>
+                        <option value="">Bachelors</option>
+                    </select>
+                    <input type="file" name="resume">
+                    <input type="text">
+                    <input type="text">
+                    <select name="country" id="">
+                        <option value="">Pakistan</option>
+                        <option value="">India</option>
+                        <option value="">Bangladesh</option>
+                    </select>
+                    <input type="text">
+                </div>
+            </div>
+
+
+
+            <div class="personal_info_container">
+                <div class="labels">
+                    <h3>Phone</h3>
+                </div>
+                <div class="inputs">
+                    <input type="tel">
+                </div>
+            </div>
+        </div>
+        
+        <div style="width: 100%;">
+            <h3 style="margin: 0;">What are your hobbies?</h3>
+            <input type="text" style="width: 90%;" name="hobbies">
+        </div>
+
+        <!-- ------------------------Current employement details--------------- -->
+
+
+        <div class="personal_info">
+            <h2 style="color: rgb(156, 19, 19);">Precious/Current Employment Details</h2>
+            <div class="personal_info_container">
+                <div class="labels">
+                    <h3>Company Name</h3>
+                    <h3>job Title</h3>
+                    <h3>How Long were you here?</h3>
+                </div>
+                <div class="inputs">
+                    <input name="companyName" type="text">
+                    <input name="jobTitle" type="text">
+                    <input name="experience" type="text">
+                </div>
+            </div>
+        </div>
+
+       <!-- --------------------------------References--------------------- -->
+
+
+       <div class="personal_info">
+        <h2 style="color: rgb(156, 19, 19);">Refrence #1</h2>
+        <div class="personal_info_container">
+            <div class="labels">
+                <h3>Name</h3>
+                <h3>Phone</h3>
+            </div>
+            <div class="inputs">
+                <input name="nameref1" type="text">
+                <input name="phoneref1" type="tel">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="personal_info">
+        <h2 style="color: rgb(156, 19, 19);">Refrence #2</h2>
+        <div class="personal_info_container">
+            <div class="labels">
+                <h3>Name</h3>
+                <h3>Phone</h3>
+            </div>
+            <div class="inputs">
+                <input name="nameref2" type="text">
+                <input name="phoneref2" type="tel">
+            </div>
+        </div>
+    </div>
+     
+    <button type="submit" style="width: 80px; height: 40px; background-color: brown; border: none; color: white;"><h3 style="display: inline;">Apply</h3></button>
+
+    </form>
+</body>
+</html>
