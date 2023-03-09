@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: #f8f9fa;
+        }
+        .container{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .card-small{
+            display: flex;
+            background-color: #ffffff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 375px;
+            min-width: 320px;
+            border-radius: 10px;
+            margin: 15px;
+            border: 2px solid #e8e8e8;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card-small:hover{
+            transform: translateY(-30px);
+        }
+        .card-large{
+            display: flex;
+            position: relative;
+            background-color: #ffffff;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            overflow: hidden;
+            min-width: 320px;
+            border-radius: 10px;
+            margin: 15px;
+            transition: transform 0.3s ease-in-out;
+            border: 2px solid #0abf69;
+        }
+        .card-large:hover{
+            transform: translateY(-30px);
+        }
+        .heading{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+        .heading h1,p{
+            margin:0 0 10px 0;
+        }
+        .heading h1{
+            color: #3b3663;
+        }
+        .heading p{
+            color: #66606c;
+            font-size: 17px;
+        }
+        .availability{
+            display: flex;
+            width: 85%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            justify-content: center;
+            font-size: 14px;
+            color: #0abf69;
+            font-weight: 600;
+            align-items: center;
+        }
+        .availability :nth-child(1),.availability :nth-child(3){
+            display: flex;
+            width: 20%;
+            height: 5px;
+            border-bottom: 1px solid #d5d3d3;
+        }
+        .availability :nth-child(2){
+            border: 1px solid #d5d3d3;
+            width: 65%;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 7px 15px 7px 15px;
+        }
+        .team-members{
+            display: flex;
+            flex-direction: column;
+            font-size: 17px;
+            width: 85%;
+            color: #747882;
+        }
+        .team-members p :first-child{
+            color: #0abf69;
+        }
+        .card-small button{
+            margin-top: 20px;
+            height: 50px;
+            width: 130px;
+            border: none;
+            color: #0abf69;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: #edebeb;
+        }
+        .card-small button:hover{
+            color: white;
+            cursor: pointer;
+            background-color: #0abf69;
+        }
+        .card-large button{
+            margin-top: 20px;
+            height: 50px;
+            width: 130px;
+            cursor: pointer;
+            border: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: #0abf69;
+        }
+        .star-badge{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 0px;
+            height: 0px;
+            border-top: 70px solid #0abf69;
+            border-right: 60px solid transparent; /* Change color as needed */
+            /* border-left: 50px solid transparent; */
+            border-bottom: 60px solid transparent;
+        }
+        .star-badge i{
+            color: white;
+            position: relative;
+            bottom: 50px;
+            left: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #3b3663; margin: 30px;font-size: 40px;">Limited pricing plans</h2>
+
+        <!-- //-----------------cards---------------- -->
+        <div class="card-container">
+
+
+
+
+            <div class="card-small">
+                <div class="heading">
+                    <h1>Limited</h1>
+                    <p><b>$2 </b>/ month per user</p>
+                </div>
+                <div class="availability">
+                    <div></div>
+                    <div>Available for a month</div>
+                    <div></div>
+                </div>
+                <div class="team-members">
+                    <p><b>>&nbsp;&nbsp;</b><b>8</b> Team members</p>
+                    <p><b>>&nbsp;&nbsp;</b><b>6</b> Team playlists</p>
+                    <p><b>>&nbsp;&nbsp;</b><b>15</b> Public playlists</p>
+                </div>
+                <button>Get started</button>
+            </div>
+
+
+            <div class="card-large">
+                <div class="star-badge">
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <div class="heading">
+                    <h1>Brilliant</h1>
+                    <p><b>$5 </b>/ month per user</p>
+                </div>
+                <div class="availability">
+                    <div></div>
+                    <div>Free 30 day trial</div>
+                    <div></div>
+                </div>
+                <div class="team-members">
+                    <p><b>>&nbsp;&nbsp;</b><b>Unlimited</b> Team members</p>
+                    <p><b>>&nbsp;&nbsp;</b><b>Unlimited</b> Team playlists</p>
+                    <p><b>>&nbsp;&nbsp;</b><b>Unlimited</b> Public playlists</p>
+                    <p><b>>&nbsp;&nbsp;</b> Send files upto 100mb</p>
+                    <p><b>>&nbsp;&nbsp;</b> Team analytics</p>
+                </div>
+                <button>Get started</button>
+            </div>
+
+
+
+            <div class="card-small">
+                <div class="heading">
+                    <h1>Basic</h1>
+                    <p><b>$0 </b>/ month per user</p>
+                </div>
+                <div class="availability">
+                    <div></div>
+                    <div>Totally free</div>
+                    <div></div>
+                </div>
+                <div class="team-members">
+                    <p><b>>&nbsp;&nbsp;</b><b>5</b> Team members</p>
+                    <p><b>>&nbsp;&nbsp;</b><b>3</b> Team playlists</p>
+                    <p><b>>&nbsp;&nbsp;</b><b>10</b> Public playlists</p>
+                </div>
+                <button>Get started</button>
+            </div>
+
+
+        </div>
+        <p style="margin:30px 0 30px 0 ; width: 80%; text-align: center; color: #747882;">© 2020 Limited pricing plans. All rights reserved | Design by W3layouts</p>
+    </div>
+</body>
+</html>
